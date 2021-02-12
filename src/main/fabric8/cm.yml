@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ${project.artifactId}
+data:
+  ${configuration.filename}: |-
+    timer.period=3000
+    timer.name=cmtimer
+    greeting.word=ConfigMap
+ 
